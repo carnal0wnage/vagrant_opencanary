@@ -12,7 +12,7 @@ The script updates Ubuntu, echo's over the opencanary.conf file, and starts it u
 
 3. vagrant up
 
-4. Secure the host. Probably want to harden or turn off the regular ssh and make it console only via ESX or at a minimum change the vagrant account password. Obviously we wont alert on connections to the real ssh server. 
+4. Secure the host. Probably want to harden or turn off the regular ssh and make it console only via ESX or at a minimum change the vagrant account password. Issue: because we manage this in-band we have a real ssh server listening if you dont otherwise change the config.
 
 <b>How to add honey creds</b>
 To add honey creds you have to add a protocol.honeycreds field. Example shown below:
